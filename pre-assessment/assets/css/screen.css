@@ -130,6 +130,7 @@ h4{
 
 #footer a{
 	color: white;
+	margin-right: 5px;
 }
 #footer a:hover{
 	color: rgb(216, 124, 44);
