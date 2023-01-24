@@ -1,0 +1,135 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/* This CSS rule resets the margin and padding of HTML elements to 0. This is done because some browsers still apply default margin and padding space. This just gets rid of that.*/
+}
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+    background-image: url("../img/bg-tile.jpg");
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+#content img{
+	float: right;
+	margin: 20px;
+	border: solid 6px rgb(30, 33, 91);
+	padding: 5px;
+}
+
+.alert {
+  background-color: #4a855d;
+  color: white;
+  width: 60%;
+}
+
+h2{
+  color: rgb(196, 66, 5);
+  text-decoration: underline;
+}
+h3{
+  color: rgb(216, 124, 44);
+}
+h4{
+  color: #59956c;
+  font-style: italic;
+}
+
+.snippet{
+	color: #df2a2a;
+}
+
+.button{
+  background-color: rgb(216, 124, 44);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover{
+	background-color: #df2a2a;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 16px;
+  }
+
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+#header {
+}
+#header h1 a {
+}
+#nav {
+	background-color: #000;
+}
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#content {
+	margin: 20px;
+}
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#footer {
+	background-color: #000;
+	color: #FFF;
+	height: 25px;
+}
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+#footer a{
+	color: white;
+}
+#footer a:hover{
+	color: rgb(216, 124, 44);
+}
