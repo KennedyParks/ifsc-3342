@@ -1,13 +1,93 @@
 *{
     font-family: 'Open Sans', sans-serif;
-    color: bisque;
-    background-color: rgb(20, 20, 20);
+}
+
+body{
+    background-color: #000;
 }
 
 a{
     text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.header{
+    background-color: #95f154;
+    height: 100px;
+    margin: 20px;
+}
+
+.header h1{
+    padding: 30px;
 }
 
 a:hover{
-    color: rgb(251, 159, 116);
+
 }
+
+.row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin: 20px;
+}
+
+.col{
+  padding:20px;
+  border:1px solid #95f154;
+  border-radius:6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.col:hover{
+    background-color: #95f154;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+/* Base */
+
+.col p {
+  color: #fff;
+  margin: 0px;
+  text-shadow: 1px 1px #000;
+}
+.fancy {
+  display: none;
+}
+
+/* Max Width */
+
+@media screen and (max-width:600px){
+  .row{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Ranged */
+
+@media screen and (max-width:800px) and (min-width:601px){
+  .row{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* Min Width */
+
+@media screen and (min-width:801px){
+  .row {
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  }
+  
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx)
