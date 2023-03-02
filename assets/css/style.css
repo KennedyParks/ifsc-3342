@@ -14,13 +14,15 @@ a{
 }
 
 .header{
-    background-color: #95f154;
-    height: 100px;
-    margin: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #95f154;
+  text-align: center;
+  margin: 20px;
 }
 
 .header h1{
-    padding: 30px;
+    
 }
 
 a:hover{
