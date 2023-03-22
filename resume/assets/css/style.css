@@ -30,8 +30,8 @@ img {
 
 /* ------ Global Styles -------*/
 body {
-  background: #efefef;
-  color: #222222;
+  background: #aafe90;
+  color: #ffffff;
   line-height: 1.6;
 }
 a:link,
@@ -39,9 +39,13 @@ a:visited {
   color: #349c26;
 }
 
+a:link:hover {
+  color: #222222;
+}
+
 .container {
   margin: 0 auto;
-  background: rgb(255, 255, 255);
+  background: rgb(34, 34, 34);
 }
 
 nav {
@@ -107,13 +111,13 @@ dt {
   flex: 1 30%;
   font-weight: 800;
   padding: 10px 0;
-  border-bottom: 1px solid #999;
+  
 }
 dd {
   flex: 1 70%;
   margin: 0;
   padding: 10px 0;
-  border-bottom: 1px solid #999;
+  
 }
 .related-links {
   display: flex;
@@ -183,6 +187,7 @@ dd {
 
 footer {
   text-align: center;
+  color: #000000;
   padding: 20px 0;
 }
 
