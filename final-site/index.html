@@ -10,6 +10,27 @@
     <h1>Final Site</h1>
     <a href="https://docs.google.com/document/d/1chqw8vU1pOONbToaAsNxEuJYU5UPayPYBRTFAArYsIs/edit?usp=sharing">Questionnaire</a>
     <br>
-    <a href="">This is where the figma link will go</a>
+    <a href="https://www.figma.com/file/1xYL1CwucYDLrCN8rBhyAv/Rock-Climbing-Arkansas?node-id=0-1&t=hN6vkjYJRof42JuP-0" target="_blank">Figma link</a>
+
+    <h2>Current weather in Horsehoe Bend</h2>
+
+    <p id="temperature"></p> <!-- added paragraph element with id 'temperature' -->
+
+<script>
+
+const URL = "https://api.weatherapi.com/v1/current.json?key=c890edabfcf94451b3a35043232903&q=36.2171,-91.6978&aqi=no";
+
+    async function makeAPICall() {
+        const result = await fetch(URL)
+        result.json().then(data => {
+            const temp = data.current.temp_f;
+            document.getElementById("temperature").textContent = `It's currently ${temp} F in Horsehoe Bend. Wear a coat!`; // updated the content of the paragraph element with id 'temperature'
+
+        })
+    }
+
+    makeAPICall()
+</script>
+
 </body>
 </html>
