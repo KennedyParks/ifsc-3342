@@ -1,0 +1,35 @@
+body {
+  background-color: #71f13f;
+  color: #000000;
+  font-family: "Share Tech Mono", monospace;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  font-family: "Share Tech Mono", monospace;
+  background-color: #ffecd2;
+}
+
+article {
+  border: 1px solid #c0c0c0;
+  padding: 1em;
+  margin: 5px 5px;
+  flex-grow: 1;
+}
+article.light {
+  background-color: rgb(206, 255, 195);
+}
+article.mid {
+  background-color: rgb(93, 227, 120);
+}
+article.dark {
+  border: 1px solid rgb(53, 150, 26);
+  background-color: rgb(53, 150, 26);
+}
+article h1 {
+  color: #000000;
+}
+article p {
+  color: #444444;
+}/*# sourceMappingURL=style.css.map */
